@@ -16,6 +16,15 @@ body {
     background-attachment: local;
 }
 
+.photo-text {
+    color: whitesmoke;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -133,12 +142,6 @@ a {
     font-style: normal;
     font-size: 30px;
     letter-spacing: 20px;
-}
-
-.photo-text {
-    color: whitesmoke;
-    padding-top: 120px;
-    padding-left: 650px;
 }
 
 .photo-year {
