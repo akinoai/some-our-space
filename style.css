@@ -27,7 +27,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     gap: 70px;
     justify-content: center;
     align-items: center
@@ -165,7 +165,7 @@ a {
 .grid-cont {
     margin-top: 45px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     gap: 40px;
     justify-content: center;
     align-items: center
@@ -186,6 +186,30 @@ a {
     background-attachment: local;
     box-shadow: 0px 0px 30px lightpink;
     color: whitesmoke;
+}
+
+.box-add-image {
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    border-radius: 5px;
+    align-items: end;
+    justify-items: end;
+    text-align: center;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; 
+    background-attachment: local;
+    box-shadow: 0px 0px 30px lightpink;
+    color: whitesmoke;
+    /* border: 1px; */
+    border-color: pink;
+}
+
+.add-image {
+    width: 35px;
+    height: 35px;
+    padding-top: 7px;
 }
 
 .home {
@@ -288,4 +312,88 @@ a {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 40px;
+}
+
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+.image-add-menu {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 30px;
+    z-index: 2;
+    /* margin-inline: auto;
+    margin-block: auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.close-menu {
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+    border-radius: 5px;
+    align-items: end;
+    justify-items: end;
+    text-align: center;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; 
+    background-attachment: local;
+    box-shadow: 0px 0px 5px lightpink;
+    color: whitesmoke;
+    border-color: pink;
+    position: absolute;  
+    top: 0;
+    right: 0;
+}
+
+.close {
+    width: 35px;
+    height: 35px;
+    padding-top: 3px;
+    padding-left: 1px;
+    rotate: 45deg;
+}
+
+.open-Explorer-button {
+    width: 400px;
+    height: 250px;
+    background-color: lightpink;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px lightpink;
+    border-color: pink;
+    margin-inline: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fileInput {
+    display: none;
+}
+
+.preview-image {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    display: none;
+    z-index: 3;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

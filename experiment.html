@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our 2022 year</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-cont"> 
+        <div class="box-home"><a href="./index.html"><img class="home" src="./photos/Home.svg"></a></div>
+
+        <div class="box-center">
+        <p class="photo-year">
+            <span class="font1">year:</span><br/>
+            <span class="font2">2022</span>
+        </p>
+        </div>
+
+        <button class="box-add-image" id="box-add-image"><img class="add-image" src="./photos/Add icon.svg"></button>
+    </div>
+
+    <div class="shadow" id="shadow">
+        <div class="image-add-menu">
+            <button class="close-menu" id="close-menu"><img class="close" src="./photos/Add icon.svg"></button>
+            <button class="open-Explorer-button" id="open-Explorer-button"><span class="font2">Выберите фото</span></button>
+            <input type="file" class="fileInput" id="fileInput">
+            <img class="preview-image" id="preview-image">
+        </div>
+    </div>
+
+<br/>
+<br/>
+<div id="container", class="photo-grid-2022"></div>   
+<script src="./experiment.js"></script>
+<script src="./ImageAddMenu.js"></script>
+</body>
+
