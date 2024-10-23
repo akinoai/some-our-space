@@ -2,10 +2,14 @@ document.getElementById('box-add-image').addEventListener('click', showMenu);
 document.getElementById('close-menu').addEventListener('click', closeMenu);
 document.getElementById('open-Explorer-button').addEventListener('click', openExplorer);
 document.getElementById('fileInput').addEventListener('change', showPreviewImage);
+const openExplorerbutton = document.getElementById('open-Explorer-button');
+const previewImage = document.getElementById('preview-image');
 
 function showMenu() {
     let element = document.getElementById('shadow');
     element.style.display = 'block';
+    previewImage.style.display = 'none';
+    openExplorerbutton.style.display = 'block';
 }
 
 function closeMenu() {
@@ -24,8 +28,6 @@ function showPreviewImage(event) {
         const reader = new FileReader();
 
         reader.onload = function(e) {
-            let previewImage = document.getElementById('preview-image');
-            let openExplorerbutton = document.getElementById('open-Explorer-button');
             previewImage.src = e.target.result;
             previewImage.style.display = 'block';
             openExplorerbutton.style.display = 'none';
