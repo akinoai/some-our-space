@@ -387,13 +387,41 @@ a {
 }
 
 .preview-image {
-    width: 50%;
-    height: 50%;
+    width: 340px;
+    height: 450px;
     border-radius: 10px;
     display: none;
     z-index: 3;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+.date-field {
+    z-index: 4;
+    margin-left: 25px;
+    margin-top: 3%;
+    width: 300px;
+    height: 30px;
+}
+
+.caption-field {
+    z-index: 4;
+    margin-left: 25px;
+    margin-top: 7%;
+    width: 300px;
+    height: 150px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Выровнять по началу контейнера */
+    align-items: flex-start; /* Выровнять элементы по верхнему краю */
+}
+
+.form-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

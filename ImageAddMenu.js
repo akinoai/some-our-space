@@ -29,7 +29,7 @@ function showPreviewImage(event) {
 
         reader.onload = function(e) {
             previewImage.src = e.target.result;
-            previewImage.style.display = 'block';
+            previewImage.style.display = 'flex';
             openExplorerbutton.style.display = 'none';
         };
 
