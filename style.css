@@ -403,6 +403,10 @@ a {
     margin-top: 3%;
     width: 300px;
     height: 30px;
+    border: 4px solid pink;
+    border-radius: 7px;
+    font-family: 'MyCustomFont1';
+    outline: none;
 }
 
 .caption-field {
@@ -411,6 +415,15 @@ a {
     margin-top: 7%;
     width: 300px;
     height: 150px;
+    border: 4px solid pink;
+    border-radius: 7px;
+    font-family: 'MyCustomFont1';
+
+}
+
+textarea {
+    resize: none;
+    outline: none;
 }
 
 .content-wrapper {
