@@ -4,17 +4,22 @@ document.getElementById('open-Explorer-button').addEventListener('click', openEx
 document.getElementById('fileInput').addEventListener('change', showPreviewImage);
 const openExplorerbutton = document.getElementById('open-Explorer-button');
 const previewImage = document.getElementById('preview-image');
+const contentWrapper = document.getElementById('content-wrapper');
+const dateField = document.getElementById('date-field');
+const captionField = document.getElementById('caption-field');
+
 
 function showMenu() {
     let element = document.getElementById('shadow');
     element.style.display = 'block';
-    previewImage.style.display = 'none';
-    openExplorerbutton.style.display = 'block';
+    contentWrapper.style.display = 'none';
+    openExplorerbutton.style.display = 'block'; 
 }
 
 function closeMenu() {
     let element = document.getElementById('shadow');
     element.style.display = 'none';
+    captionField.value = "";
 }
 
 function openExplorer() {
@@ -29,8 +34,10 @@ function showPreviewImage(event) {
 
         reader.onload = function(e) {
             previewImage.src = e.target.result;
+            contentWrapper.style.display = 'flex';
             previewImage.style.display = 'flex';
             openExplorerbutton.style.display = 'none';
+
         };
 
         reader.readAsDataURL(file); // Читаем файл как Data URL для отображения

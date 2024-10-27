@@ -414,11 +414,26 @@ a {
     margin-left: 25px;
     margin-top: 7%;
     width: 300px;
-    height: 150px;
+    height: 290px;
     border: 4px solid pink;
     border-radius: 7px;
     font-family: 'MyCustomFont1';
+}
 
+.submit-photo {
+    z-index: 4;
+    margin-left: -185px;
+    margin-top: 9%;
+    width: 100px;
+    height: 50px;
+    /* border: 4px solid pink; */
+    border-radius: 7px;
+    font-family: 'MyCustomFont2';
+    font-size: x-large;
+    box-shadow: 0px 0px 5px lightpink;
+    color: white;
+    border-color: pink;
+    background-color: lightpink;
 }
 
 textarea {
