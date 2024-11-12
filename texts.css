@@ -1,0 +1,75 @@
+.photo-text {
+    color: whitesmoke;
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0px 0px 10px hotpink;
+}
+
+@font-face {
+    font-family: 'MyCustomFont1';
+    src: url('./fonts/baskerville-old-face.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('./fonts/Arapey-Regular.woff2') format('woff2'),
+         url('./fonts/Arapey-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'MyCustomFont3';
+    src: url('./fonts/GreatVibes-Regular.woff2') format('woff2');
+}
+  
+.font1 {
+    font-family: 'MyCustomFont1';
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.font2 {
+    font-family: 'MyCustomFont2';
+    font-style: normal;
+    font-size: 50px;
+}
+
+.font3 {
+    font-family: 'MyCustomFont3';
+    font-style: normal;
+    font-size: 70px;
+    letter-spacing: 20px;
+}
+
+.font4 {
+    font-family: 'MyCustomFont4';
+    font-style: normal;
+    font-size: 30px;
+    letter-spacing: 20px;
+}
+
+.caption {
+    font-family: 'MyCustomFont2';
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: -25px;
+    text-align: center;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.photo:hover .caption {
+    opacity: 1;
+}
